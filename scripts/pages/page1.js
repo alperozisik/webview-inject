@@ -22,7 +22,7 @@ const Page1 = extend(Page1Design)(
             myWebView.loadURL('http://example.com/');
             myWebView.onLoad = function(event) {
                 console.log("web page loaded");
-                setTimeout(function() {
+                setTimeout(function() { //this is UI thread via Timer; modified original setTimeout in app.js
                     var script = 'document.querySelector("body > div > p:nth-child(3) > a").style.display = "none";';
                     myWebView.evaluateJS(script);
                     console.log("script evaluated");
