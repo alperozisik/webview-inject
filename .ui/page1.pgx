@@ -1,0 +1,115 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"props": {
+				"width": 187.5,
+				"height": 301.5,
+				"children": [
+					"statusBar",
+					"headerBar",
+					"webview1"
+				],
+				"name": "page1",
+				"flexProps": {
+					"flexDirection": "COLUMN",
+					"alignItems": "CENTER",
+					"direction": "INHERIT",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "SPACE_AROUND"
+				},
+				"style": {
+					"backgroundColor": "#EEEEEE",
+					"font": {}
+				},
+				"isRemovable": true,
+				"layout": {
+					"width": 93.75,
+					"height": 150.75
+				},
+				"flex": {
+					"flexDirection": 0,
+					"alignItems": 2,
+					"direction": 0,
+					"flexWrap": 0,
+					"justifyContent": 4
+				},
+				"orientation": "PORTRAIT"
+			}
+		},
+		{
+			"type": "StatusBar",
+			"props": {
+				"height": 20,
+				"name": "statusBar",
+				"parent": "page1",
+				"flexProps": {},
+				"style": {
+					"font": {}
+				},
+				"isRemovable": false,
+				"layout": {
+					"height": 10
+				},
+				"flex": {},
+				"visibility": true
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"props": {
+				"height": 44,
+				"title": "page1",
+				"titleColor": "rgba( 0, 0, 0, 1 )",
+				"name": "headerBar",
+				"parent": "page1",
+				"flexProps": {},
+				"style": {
+					"font": {}
+				},
+				"isRemovable": false,
+				"layout": {
+					"height": 22
+				},
+				"flex": {},
+				"visibility": true
+			}
+		},
+		{
+			"type": "WebView",
+			"id": "2cc7fa1b",
+			"props": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": null,
+				"children": [],
+				"usePageVariable": true,
+				"name": "webview1",
+				"parent": "page1",
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0
+				},
+				"style": {
+					"backgroundColor": "#FFFFFF",
+					"opacity": 1,
+					"borderColor": "rgba(0,0,0,1)",
+					"borderWidth": 0,
+					"font": {}
+				},
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"top": 0
+				},
+				"flex": {
+					"positionType": 1
+				},
+				"visibility": true
+			}
+		}
+	]
+}
